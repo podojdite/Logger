@@ -6,12 +6,15 @@
 - **LoggerLib** - Библиотека для записи логов
 - **LoggerApp** - Консольное приложение для тестирования
 
-## Сборка на Windows
+## Установка на Windows
+### Сборка и первый запуск
 ```
 run.bat <static|dynamic> <log file> <info|warning|error>
 ```
-
-## Запуск на Windows
+- **static** - для статичной библиотеки
+- **dynamic** - для динамической библиотеки
+- **info|warning|error** - уровень логирования сообщения по умолчанию
+### Последующий запуск
 ```
 build/bin/Release/LoggerApp.exe <log file> <info|warning|error>
 ```
@@ -19,7 +22,11 @@ build/bin/Release/LoggerApp.exe <log file> <info|warning|error>
 ## Формат ввода
 ```
 <сообщение>/<уровень>
+<команда setlevel|help|exit>
 ```
+- **setlevel** - изменение уровня важности по умолчанию
+- **help** - подсказка
+- **exit** - выход из программы
 Пример:
 ```
 Ошибка входа/error
