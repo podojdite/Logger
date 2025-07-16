@@ -1,0 +1,21 @@
+# Build directories
+build/
+*/build/
+.user
+.suo
+.sln
+.vcxproj
+.dir
+.obj
+.pdb
+.ilk
+.log
+.tlog
+.idb
+.exp
+.lib
+.dll
+.exe
+
+# IDE files
+.vscode
